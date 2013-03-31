@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mobile Slider Demo</title>
+	<link rel="stylesheet" href="../jquery.mobileslider.css">
+	<style>
+		body {
+			margin:20px;
+			font-family:Arial, Helvetica, sans-serif;
+			background:#333;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="mobile-slider">
+		<div class="phone left">
+			<a href="images/slide1.png"></a>
+			<a href="images/slide2.png"></a>
+			<a href="images/slide3.png"></a>
+			<a href="images/slide4.png"></a>
+		</div>
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="../jquery.mobileslider.js"></script>
+	<script>
+		$('.mobile-slider').mobileSlider({
+			duration: 1000,
+			transition: 500
+		});		
+	</script>
+</body>
+</html>

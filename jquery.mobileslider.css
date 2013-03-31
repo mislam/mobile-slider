@@ -1,0 +1,136 @@
+.mobile-slider {
+	width:440px;
+	height:760px;
+	overflow:hidden;
+}
+
+.mobile-slider:after {	/* clearfix */
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.mobile-slider .phone {
+	width:380px;
+	height:760px;
+	background:url(images/iphone.png) no-repeat top left;
+}
+
+.mobile-slider .phone.left { float:left; }
+.mobile-slider .phone.right { float:right; }
+
+.mobile-slider .phone .wrapper {
+	position:absolute;
+	width:320px;
+	height:480px;
+	margin:133px 0 0 32px;
+	overflow:hidden;
+}
+
+.mobile-slider .phone .image_container {
+	position:relative;
+	width:320px;
+	height:480px;
+	left:0;
+}
+
+.mobile-slider .phone > a {
+	display:none;
+}
+
+.mobile-slider .phone img {
+	width:320px;
+	height:480px;
+	float:left;
+}
+
+.mobile-slider .numerals {
+	width:40px;
+	max-height:480px;
+	padding:5px;
+	margin:128px 0 0;
+	background:rgba(0,0,0,0.1);
+	border-radius:25px;
+	overflow:hidden;
+}
+
+.mobile-slider .numerals.left { float:left; }
+.mobile-slider .numerals.right { float:right; }
+
+.mobile-slider .numerals ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.mobile-slider .numerals ul li {
+	display:block;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	background:url(images/loaderbg.png) no-repeat top left;
+}
+
+.mobile-slider .numerals ul li span {
+	width:100%;
+	height:100%;
+	color:#fff;
+	font-size:11px;
+	font-weight:bold;
+	text-align:center;
+	display:block;
+	opacity:0.15;
+	cursor:pointer;
+}
+
+.mobile-slider .numerals ul li span.active {
+	opacity:1.0;
+}
+
+.mobile-slider .progressbar {	/* canvas */
+	position:absolute;
+	margin-top:0;
+	z-index:0;
+}
+
+.mobile-slider .spinner {
+    position: absolute;
+	background: url("images/spinner.gif") no-repeat;
+	height: 32px;
+    width: 32px;
+	margin: 357px 0 0 176px;
+    z-index: 1;
+	display: none;
+}
+
+.mobile-slider .debug_console {
+	position:absolute;
+	z-index:1;
+	margin:80px 0 0 222px;
+	border-radius:20px 0 0 20px;
+	padding:5px 7px 5px;
+	background:rgba(64,64,64,0.75);
+	color:#fff;
+	font-family:monospace;
+	font-size:10px;
+	line-height:10px;
+}
+
+.mobile-slider .debug_console .name {
+	width:115px;
+	display:inline-block;
+	text-align:right;
+}
+
+.mobile-slider .debug_console .name:after {
+	content: ":";
+	padding:0 5px;
+}
+
+.mobile-slider .debug_console .value {
+	width:20px;
+	display:inline-block;
+	text-align:right;
+}
