@@ -341,15 +341,15 @@
 				SLIDING_INTERVAL = opts.transition;
 			};
 		
-        
+		
 		init();
 	};
-    
+	
 	$.mobileSlider.defaultOptions = {
 		duration: 5000,			// for how long each slide will display (milliseconds)
 		transition: 500,		// specify the sliding speed (milliseconds)
 		debug: false			// show/hide debugger panel
-    };
+	};
 
 	$.fn.mobileSlider = function(options) {
 		return this.each(function() {
